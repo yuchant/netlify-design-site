@@ -3,7 +3,8 @@
     "title": "Peter Baston",
     "titleTemplate": "%s",
     "description": "",
-    "siteUrl": "https://petebaston.design"
+    "siteUrl": "https://petebaston.design",
+    "icon": "favicon.ico"
   },
   "ga": "UA-XXXXXXXXX-X"
 }
