@@ -4,7 +4,7 @@
     "titleTemplate": "%s",
     "description": "",
     "siteUrl": "https://petebaston.design",
-    "icon": "favicon.ico"
+    "icon": "/favicon.ico"
   },
   "ga": "UA-XXXXXXXXX-X"
 }
