@@ -1,16 +1,8 @@
 {
   "name": "@stackrole/gatsby-starter-foundation",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+  "description": "Pete's Site",
   "version": "1.0.0",
-  "author": "Stackrole <stackrole@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stackrole/gatsby-starter-foundation.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stackrole/gatsby-starter-foundation/issues"
-  },
+  "author": "Yuji Tomita <yuchant@gmail.com>",
   "scripts": {
     "build": "gatsby build --log-pages",
     "develop": "gatsby develop",

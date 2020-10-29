@@ -6,6 +6,13 @@ import SEO from "../components/seo"
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
+    site {
+      siteMetadata {
+        name
+        contactHtml
+        description
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -37,14 +44,18 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.fluid
-    : ""
   return (
     <Layout>
       <SEO />
+      <div dangerouslySetInnerHTML={{ __html: site.siteMetadata.name }}></div>
+      <div
+        dangerouslySetInnerHTML={{ __html: site.siteMetadata.contactHtml }}
+      ></div>
+      <div
+        dangerouslySetInnerHTML={{ __html: site.siteMetadata.description }}
+      ></div>
 
       {/* <div className="home-banner grids col-1 sm-2">
         <div>
