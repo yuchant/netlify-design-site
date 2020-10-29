@@ -9,7 +9,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         name
-        contactHtml
+        contact
         description
       }
     }
@@ -51,7 +51,7 @@ const HomePage = ({ data }) => {
       <SEO />
       <div dangerouslySetInnerHTML={{ __html: site.siteMetadata.name }}></div>
       <div
-        dangerouslySetInnerHTML={{ __html: site.siteMetadata.contactHtml }}
+        dangerouslySetInnerHTML={{ __html: site.siteMetadata.contact }}
       ></div>
       <div
         dangerouslySetInnerHTML={{ __html: site.siteMetadata.description }}
